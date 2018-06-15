@@ -1,0 +1,18 @@
+\\vmware-host\Shared Folders\下载\XYDX18\XYDX18Website\bin\XYDX18Website.dll
+\\vmware-host\Shared Folders\下载\XYDX18\XYDX18Website\bin\XYDX18Website.pdb
+\\vmware-host\Shared Folders\下载\XYDX18\XYDX18Website\bin\XYDX18BLL.dll
+\\vmware-host\Shared Folders\下载\XYDX18\XYDX18Website\bin\XYDX18DAL.dll
+\\vmware-host\Shared Folders\下载\XYDX18\XYDX18Website\bin\XYDX18BLL.pdb
+\\vmware-host\Shared Folders\下载\XYDX18\XYDX18Website\bin\XYDX18DAL.pdb
+\\vmware-host\Shared Folders\下载\XYDX18\XYDX18Website\obj\Debug\ResolveAssemblyReference.cache
+\\vmware-host\Shared Folders\下载\XYDX18\XYDX18Website\obj\Debug\XYDX18Website.dll
+\\vmware-host\Shared Folders\下载\XYDX18\XYDX18Website\obj\Debug\XYDX18Website.pdb
+E:\WorkPlace\XYDX18\XYDX18Website\bin\XYDX18Website.dll
+E:\WorkPlace\XYDX18\XYDX18Website\bin\XYDX18Website.pdb
+E:\WorkPlace\XYDX18\XYDX18Website\bin\XYDX18BLL.dll
+E:\WorkPlace\XYDX18\XYDX18Website\bin\XYDX18DAL.dll
+E:\WorkPlace\XYDX18\XYDX18Website\bin\XYDX18BLL.pdb
+E:\WorkPlace\XYDX18\XYDX18Website\bin\XYDX18DAL.pdb
+E:\WorkPlace\XYDX18\XYDX18Website\obj\Debug\XYDX18Website.csprojResolveAssemblyReference.cache
+E:\WorkPlace\XYDX18\XYDX18Website\obj\Debug\XYDX18Website.dll
+E:\WorkPlace\XYDX18\XYDX18Website\obj\Debug\XYDX18Website.pdb

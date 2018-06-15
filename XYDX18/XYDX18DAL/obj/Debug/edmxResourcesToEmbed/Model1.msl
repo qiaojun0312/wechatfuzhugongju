@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="xydx18ModelStoreContainer" CdmEntityContainer="xydx18Entities">
+    <EntitySetMapping Name="Account">
+      <EntityTypeMapping TypeName="xydx18Model.Account">
+        <MappingFragment StoreEntitySet="Account">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="RegDate" ColumnName="RegDate" />
+          <ScalarProperty Name="LastLoginDate" ColumnName="LastLoginDate" />
+          <ScalarProperty Name="IsLockedOut" ColumnName="IsLockedOut" />
+          <ScalarProperty Name="subscribe" ColumnName="subscribe" />
+          <ScalarProperty Name="openid" ColumnName="openid" />
+          <ScalarProperty Name="nickname" ColumnName="nickname" />
+          <ScalarProperty Name="sex" ColumnName="sex" />
+          <ScalarProperty Name="language" ColumnName="language" />
+          <ScalarProperty Name="city" ColumnName="city" />
+          <ScalarProperty Name="province" ColumnName="province" />
+          <ScalarProperty Name="country" ColumnName="country" />
+          <ScalarProperty Name="headimgurl" ColumnName="headimgurl" />
+          <ScalarProperty Name="subscribe_time" ColumnName="subscribe_time" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ContentsLog">
+      <EntityTypeMapping TypeName="xydx18Model.ContentsLog">
+        <MappingFragment StoreEntitySet="ContentsLog">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="OpType" ColumnName="OpType" />
+          <ScalarProperty Name="ContentsID" ColumnName="ContentsID" />
+          <ScalarProperty Name="BfContentsUpdate" ColumnName="BfContentsUpdate" />
+          <ScalarProperty Name="AfContentsUpdate" ColumnName="AfContentsUpdate" />
+          <ScalarProperty Name="BfTitleUpdate" ColumnName="BfTitleUpdate" />
+          <ScalarProperty Name="ATitleUpdate" ColumnName="ATitleUpdate" />
+          <ScalarProperty Name="AddDate" ColumnName="AddDate" />
+          <ScalarProperty Name="AccountUser" ColumnName="AccountUser" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Contents">
+      <EntityTypeMapping TypeName="xydx18Model.Contents">
+        <MappingFragment StoreEntitySet="Contents">
+          <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+          <ScalarProperty Name="AccountUser" ColumnName="AccountUser" />
+          <ScalarProperty Name="AddDate" ColumnName="AddDate" />
+          <ScalarProperty Name="URL" ColumnName="URL" />
+          <ScalarProperty Name="QRCodeURL" ColumnName="QRCodeURL" />
+          <ScalarProperty Name="Mark" ColumnName="Mark" />
+          <ScalarProperty Name="XContents" ColumnName="XContents" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

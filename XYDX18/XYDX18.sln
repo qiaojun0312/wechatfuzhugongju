@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XYDX18Website", "XYDX18Website\XYDX18Website.csproj", "{0A162CB5-9873-492B-BB8A-5339048A31C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XYDX18BLL", "XYDX18BLL\XYDX18BLL.csproj", "{EE266A67-701A-4FCC-94A3-1020E99C50FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XYDX18DAL", "XYDX18DAL\XYDX18DAL.csproj", "{D87544AC-0E58-4D71-A3FA-87B394211ED4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0A162CB5-9873-492B-BB8A-5339048A31C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A162CB5-9873-492B-BB8A-5339048A31C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A162CB5-9873-492B-BB8A-5339048A31C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A162CB5-9873-492B-BB8A-5339048A31C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE266A67-701A-4FCC-94A3-1020E99C50FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE266A67-701A-4FCC-94A3-1020E99C50FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE266A67-701A-4FCC-94A3-1020E99C50FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE266A67-701A-4FCC-94A3-1020E99C50FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D87544AC-0E58-4D71-A3FA-87B394211ED4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D87544AC-0E58-4D71-A3FA-87B394211ED4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D87544AC-0E58-4D71-A3FA-87B394211ED4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D87544AC-0E58-4D71-A3FA-87B394211ED4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

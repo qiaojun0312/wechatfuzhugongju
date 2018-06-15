@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0A162CB5-9873-492B-BB8A-5339048A31C9}</ProjectGuid>
+    <ProjectTypeGuids>{E53F8FEA-EAE0-44A6-8774-FFD645390401};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>XYDX18Website</RootNamespace>
+    <AssemblyName>XYDX18Website</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="eBuul.CodeImage.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\eBuul.CodeImage.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Senparc.Weixin.MP, Version=7.0.20.38546, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Senparc.Weixin.MP.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.WebPages" />
+    <Reference Include="System.Web.Helpers" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="zxing, Version=1.0.4567.26534, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\zxing.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\ContentsController.cs" />
+    <Compile Include="Controllers\SuperAdminController.cs" />
+    <Compile Include="SelfModels\PageExpand.cs" />
+    <Compile Include="SelfModels\PagingInfo.cs" />
+    <Compile Include="SelfModels\ContentsOfPageList.cs" />
+    <Compile Include="SelfModels\ContentsLogOfPageList.cs" />
+    <Compile Include="App_Code\eBuulAuthorizeAttribute.cs" />
+    <Compile Include="SelfModels\AccountOfPageList.cs" />
+    <Compile Include="TenPayLibV3\MD5Util.cs" />
+    <Compile Include="TenPayLibV3\RequestHandler.cs" />
+    <Compile Include="TenPayLibV3\ResponseHandler.cs" />
+    <Compile Include="TenPayLibV3\TenPayUtil.cs" />
+    <Compile Include="TenPayLibV3\TenPayV3Info.cs" />
+    <Compile Include="TenPayLibV3\TenPayV3InfoCollection.cs" />
+    <Compile Include="TenPayLibV3\TenPayV3\TenPayV3.cs" />
+    <Compile Include="TenPayLibV3\TenPayV3\TenPayV3Result.cs" />
+    <Content Include="App_Code\PagingHelpers.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\assets\css\admin.css" />
+    <Content Include="Content\assets\css\amazeui.css" />
+    <Content Include="Content\assets\css\amazeui.flat.css" />
+    <Content Include="Content\assets\css\amazeui.flat.min.css" />
+    <Content Include="Content\assets\css\amazeui.min.css" />
+    <Content Include="Content\assets\css\app.css" />
+    <Content Include="Content\assets\i\app-icon72x72%402x.png" />
+    <Content Include="Content\assets\i\examples\admin-chrome.png" />
+    <Content Include="Content\assets\i\examples\admin-firefox.png" />
+    <Content Include="Content\assets\i\examples\admin-ie.png" />
+    <Content Include="Content\assets\i\examples\admin-opera.png" />
+    <Content Include="Content\assets\i\examples\admin-safari.png" />
+    <Content Include="Content\assets\i\examples\adminPage.png" />
+    <Content Include="Content\assets\i\examples\blogPage.png" />
+    <Content Include="Content\assets\i\examples\landing.png" />
+    <Content Include="Content\assets\i\examples\landingPage.png" />
+    <Content Include="Content\assets\i\examples\loginPage.png" />
+    <Content Include="Content\assets\i\examples\sidebarPage.png" />
+    <Content Include="Content\assets\i\favicon.png" />
+    <Content Include="Content\assets\i\icon.png" />
+    <Content Include="Content\assets\i\startup-640x1096.png" />
+    <Content Include="Content\assets\js\amazeui.ie8polyfill.js" />
+    <Content Include="Content\assets\js\amazeui.ie8polyfill.min.js" />
+    <Content Include="Content\assets\js\amazeui.js" />
+    <Content Include="Content\assets\js\amazeui.min.js" />
+    <Content Include="Content\assets\js\amazeui.widgets.helper.js" />
+    <Content Include="Content\assets\js\amazeui.widgets.helper.min.js" />
+    <Content Include="Content\assets\js\app.js" />
+    <Content Include="Content\assets\js\handlebars.min.js" />
+    <Content Include="Content\assets\js\jquery-3.2.1.min.js" />
+    <Content Include="Global.asax" />
+    <Content Include="index.html" />
+    <Content Include="Scripts\contents.js" />
+    <Content Include="Scripts\contentshare.js" />
+    <Content Include="Scripts\jquery-1.7.1.min.js" />
+    <Content Include="Scripts\account.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\XYDX18BLL\XYDX18BLL.csproj">
+      <Project>{EE266A67-701A-4FCC-94A3-1020E99C50FA}</Project>
+      <Name>XYDX18BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\XYDX18DAL\XYDX18DAL.csproj">
+      <Project>{D87544AC-0E58-4D71-A3FA-87B394211ED4}</Project>
+      <Name>XYDX18DAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Admin\ContentsList.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Login\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\assets\fonts\fontawesome-webfont.eot" />
+    <None Include="Content\assets\fonts\fontawesome-webfont.ttf" />
+    <None Include="Content\assets\fonts\fontawesome-webfont.woff" />
+    <None Include="Content\assets\fonts\fontawesome-webfont.woff2" />
+    <None Include="Content\assets\fonts\FontAwesome.otf" />
+    <Content Include="Views\Admin\ContentsAdd.cshtml" />
+    <Content Include="Views\SuperAdmin\Index.cshtml" />
+    <Content Include="Views\SuperAdmin\Log.cshtml" />
+    <Content Include="Views\SuperAdmin\AccountList.cshtml" />
+    <Content Include="Views\Contents\Index.cshtml" />
+    <Content Include="Views\Contents\ReViewQRCode.cshtml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49158</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

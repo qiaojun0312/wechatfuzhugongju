@@ -1,0 +1,17 @@
+\\vmware-host\shared folders\文稿\visual studio 2010\Projects\XYDX18\XYDX18DAL\bin\Debug\XYDX18DAL.dll
+\\vmware-host\shared folders\文稿\visual studio 2010\Projects\XYDX18\XYDX18DAL\bin\Debug\XYDX18DAL.pdb
+\\vmware-host\shared folders\文稿\visual studio 2010\Projects\XYDX18\XYDX18DAL\obj\Debug\ResolveAssemblyReference.cache
+\\vmware-host\shared folders\文稿\visual studio 2010\Projects\XYDX18\XYDX18DAL\obj\Debug\XYDX18DAL.dll
+\\vmware-host\shared folders\文稿\visual studio 2010\Projects\XYDX18\XYDX18DAL\obj\Debug\XYDX18DAL.pdb
+\\vmware-host\Shared Folders\文稿\Visual Studio 2010\Projects\XYDX18\XYDX18DAL\bin\Debug\XYDX18DAL.dll.config
+\\vmware-host\Shared Folders\下载\XYDX18\XYDX18DAL\bin\Debug\XYDX18DAL.dll.config
+\\vmware-host\Shared Folders\下载\XYDX18\XYDX18DAL\bin\Debug\XYDX18DAL.dll
+\\vmware-host\Shared Folders\下载\XYDX18\XYDX18DAL\bin\Debug\XYDX18DAL.pdb
+\\vmware-host\Shared Folders\下载\XYDX18\XYDX18DAL\obj\Debug\ResolveAssemblyReference.cache
+\\vmware-host\Shared Folders\下载\XYDX18\XYDX18DAL\obj\Debug\XYDX18DAL.dll
+\\vmware-host\Shared Folders\下载\XYDX18\XYDX18DAL\obj\Debug\XYDX18DAL.pdb
+E:\WorkPlace\XYDX18\XYDX18DAL\bin\Debug\XYDX18DAL.dll.config
+E:\WorkPlace\XYDX18\XYDX18DAL\bin\Debug\XYDX18DAL.dll
+E:\WorkPlace\XYDX18\XYDX18DAL\bin\Debug\XYDX18DAL.pdb
+E:\WorkPlace\XYDX18\XYDX18DAL\obj\Debug\XYDX18DAL.dll
+E:\WorkPlace\XYDX18\XYDX18DAL\obj\Debug\XYDX18DAL.pdb

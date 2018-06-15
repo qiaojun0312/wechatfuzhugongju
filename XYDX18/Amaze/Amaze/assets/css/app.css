@@ -1,0 +1,13 @@
+/* Write your styles */
+.bg{
+    background-color: #278def;
+}
+.text{
+    color: white;
+    font-weight: 900;
+}
+.btn1{
+    float: right;
+    margin-right: 30px;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="xydx18Model.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2005" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="xydx18ModelStoreContainer">
+    <EntitySet Name="Account" EntityType="xydx18Model.Store.Account" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Contents" EntityType="xydx18Model.Store.Contents" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ContentsLog" EntityType="xydx18Model.Store.ContentsLog" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="Account">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Mobile" Type="nvarchar" MaxLength="200" />
+    <Property Name="Password" Type="nvarchar" MaxLength="50" />
+    <Property Name="RegDate" Type="datetime" />
+    <Property Name="LastLoginDate" Type="datetime" />
+    <Property Name="IsLockedOut" Type="bit" />
+    <Property Name="subscribe" Type="int" />
+    <Property Name="openid" Type="nvarchar" MaxLength="500" />
+    <Property Name="nickname" Type="nvarchar" MaxLength="500" />
+    <Property Name="sex" Type="int" />
+    <Property Name="language" Type="nvarchar" MaxLength="500" />
+    <Property Name="city" Type="nvarchar" MaxLength="500" />
+    <Property Name="province" Type="nvarchar" MaxLength="500" />
+    <Property Name="country" Type="nvarchar" MaxLength="500" />
+    <Property Name="headimgurl" Type="nvarchar" MaxLength="500" />
+    <Property Name="subscribe_time" Type="nvarchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="Contents">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="nvarchar" MaxLength="500" />
+    <Property Name="XContents" Type="nvarchar(max)" />
+    <Property Name="Mark" Type="nvarchar(max)" />
+    <Property Name="QRCodeURL" Type="nvarchar" MaxLength="500" />
+    <Property Name="URL" Type="nvarchar" MaxLength="500" />
+    <Property Name="AddDate" Type="datetime" />
+    <Property Name="AccountUser" Type="nvarchar" MaxLength="500" />
+    <Property Name="IsDelete" Type="int" />
+  </EntityType>
+  <EntityType Name="ContentsLog">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="OpType" Type="nvarchar" MaxLength="500" />
+    <Property Name="ContentsID" Type="int" />
+    <Property Name="BfContentsUpdate" Type="nvarchar(max)" />
+    <Property Name="AfContentsUpdate" Type="nvarchar(max)" />
+    <Property Name="BfTitleUpdate" Type="nvarchar" MaxLength="500" />
+    <Property Name="ATitleUpdate" Type="nvarchar" MaxLength="500" />
+    <Property Name="AddDate" Type="datetime" />
+    <Property Name="AccountUser" Type="nvarchar" MaxLength="500" />
+  </EntityType>
+</Schema>

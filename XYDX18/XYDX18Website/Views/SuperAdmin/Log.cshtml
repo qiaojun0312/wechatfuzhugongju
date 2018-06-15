@@ -1,0 +1,127 @@
+﻿@model XYDX18Website.SelfModels.ContentsLogOfPageList
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>内容管理</title>
+    <!-- Set render engine for 360 browser -->
+    <meta name="renderer" content="webkit">
+    <!-- No Baidu Siteapp-->
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <link rel="icon" type="image/png" href="@Url.Content("~/Content/assets/i/favicon.png")">
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="@Url.Content("~/Content/assets/i/app-icon72x72@2x.png")">
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI" />
+    <link rel="apple-touch-icon-precomposed" href="@Url.Content("~/Content/assets/i/app-icon72x72@2x.png")">
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="@Url.Content("~/Content/assets/i/app-icon72x72@2x.png")">
+    <meta name="msapplication-TileColor" content="#0e90d2">
+    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+    <!--
+    <link rel="canonical" href="http://www.example.com/">
+    -->
+    <link rel="stylesheet" href="@Url.Content("~/Content/assets/css/amazeui.min.css")"/>
+    <link rel="stylesheet" href="@Url.Content("~/Content/assets/css/app.css")"/>
+
+    <script type="text/javascript" language="javascript" src="@Url.Content("~/Content/assets/js/jquery-3.2.1.min.js")"></script>
+ 
+</head>
+<body>
+    <!--[if lte IE 9]>
+<p class="browsehappy">你正在使用<strong>过时</strong>的浏览器，Amaze UI 暂不支持。 请 <a
+        href="http://browsehappy.com/" target="_blank">升级浏览器</a>
+    以获得更好的体验！</p>
+<![endif]-->
+    <!-- 页面内容 开发时删除 -->
+    <div class="am-panel am-panel-default bg">
+        <div class="am-panel-bd text">
+              当前列表：日志列表</div>
+    </div>
+  <a href="/SuperAdmin/Index">内容列表</a>------------<a href="/SuperAdmin/Log">日志列表</a>------------<a href="/SuperAdmin/AccountList">用户列表</a>
+    <table class="am-table am-table-bordered am-table-radius am-table-striped">
+     <button type="button" class="am-btn am-btn-danger am-round btnQ" id="doc-prompt-btnQ">退出</button>
+        <thead>
+            <tr>
+                <th>
+                    类型
+                </th>
+                <th>
+                    修改前标题
+                </th>
+                 <th>
+                    修改前内容
+                </th>
+                <th>
+                    修改后标题
+                </th>
+                 <th>
+                    修改后内容
+                </th>
+                 <th>
+                    用户
+                </th>
+                <th>
+                    日期
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+       
+         @foreach (XYDX18DAL.ContentsLog his in Model.ContentsLogList)
+         {
+               <tr>
+                <td>
+                    @his.OpType
+                </td>
+                <td>
+                   @his.BfTitleUpdate
+                </td>
+                  <td>
+                   @his.BfContentsUpdate
+                </td>
+                    <td>
+                   @his.ATitleUpdate
+                </td>
+                  <td>
+                   @his.AfContentsUpdate
+                </td>
+                 <td>
+                  @his.AccountUser
+                </td>
+                 <td>
+                  @string.Format("{0:yyyy-MM-dd}", his.AddDate)
+                </td>
+            </tr>
+         }
+           
+            
+        </tbody>
+    </table>
+       <div class="pages clearfix">
+            @Html.PageLinkes(true, "SuperAdmin", "Log", Model.PageInfor, null)
+        </div>
+    
+    <!-- 以上页面内容 开发时删除 -->
+    <!--[if lt IE 9]>
+<script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+<script type="text/javascript" language="javascript" src="@Url.Content("~/Content/assets/js/amazeui.ie8polyfill.min.js")"></script>
+<![endif]-->
+    <!--[if (gte IE 9)|!(IE)]><!-->
+    <script type="text/javascript" language="javascript" src="@Url.Content("~/Content/assets/js/jquery.min.js")"></script>
+    <!--<![endif]-->
+    <script type="text/javascript" language="javascript" src="@Url.Content("~/Content/assets/js/amazeui.min.js")"></script>
+    <script type="text/javascript" language="javascript" src="@Url.Content("~/Scripts/contents.js")"></script>
+</body>
+</html>

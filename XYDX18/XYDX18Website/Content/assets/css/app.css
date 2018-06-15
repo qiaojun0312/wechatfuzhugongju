@@ -1,0 +1,57 @@
+/* Write your styles */
+.bg{
+    background-color: #278def;
+}
+.text{
+    color: white;
+    font-weight: 900;
+}
+.btn1{
+    float: left;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+.btnQ{
+    float: right;
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
+
+/*·­Ò³¿ªÊ¼*/
+
+.pages {
+    margin: 40px auto;
+    text-align: center;
+}
+
+.pages ul li {
+    display: inline-block;
+    *display: inline;
+    height: 30px;
+    line-height: 30px;
+}
+
+.pages a {
+    background: #ebebeb;
+    color: #333;
+    cursor: pointer;
+    padding: 3px 8px;
+    text-decoration: none;
+    margin: 0 2px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.pages .hover a {
+    background: #787878;
+    color: #ffffff;
+    border: 0;
+    padding: 4px 9px;
+}
+
+.pages li a:hover {
+    background: #dcdcdc
+}
+
+
+/*·­Ò³½áÊø*/

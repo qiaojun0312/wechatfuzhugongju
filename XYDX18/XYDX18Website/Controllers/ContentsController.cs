@@ -26,7 +26,7 @@ namespace XYDX18Website.Controllers
             nonceStr = TenPayUtil.GetNoncestr();
             //晓峰测试号 appID 和 Scret  appid=wx0bcc58e7cb182a1f&secret=6bca2d2e1e4a0892b462590aec81716f
             //获取全局Access_takenJSON 有效期7200秒，开发者必须在自己的服务全局缓存access_token
-            string Access_takenJSON = packageReqHandler.RequestGet("https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=wxa265c18e86e2caeb&secret=5128d737291fc3b32b08fdb55c7d9e22");
+            string Access_takenJSON = packageReqHandler.RequestGet("https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=xx&secret=xxxx");
             strAccess_taken = packageReqHandler.GetJsonValue(Access_takenJSON, "access_token");
 
 
